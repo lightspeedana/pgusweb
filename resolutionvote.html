@@ -1,0 +1,37 @@
+{%extends "base_pgus.html" %}
+{%load markup%}
+{%block title%}About Us{%endblock%}
+{%block layoutblock%}
+<script language="JavaScript">
+function showInput() {
+    var value =  document.getElementById("user_input").value;
+    localStorage.setItem('val',value); 
+}
+</script>
+<!-- Three -->
+<section id="three" class="wrapper">
+  <div class="container">
+    <header class="align-center">
+      <h2>Resolution Tracker</h2>
+    </header>
+    <h3 class="top2">Instructions</h3>
+    <p>
+     This resolution tracker is designed to allow board members to vote on resolutions submitted by others, providing information on 
+     who each resolution as well as votes.
+    </p>
+    <h3 class="top2">Vote On A Resolution</h3>
+     <a href="resolutionvote.html" class="button special" style='text-align: center;'>Click Here to Vote</a>
+    <h3 class="top2">Submit A Resolution</h3>
+    <p>
+    
+    </p>
+  </div>
+</section>
+<style>
+    form{
+        text-align: center;
+    }
+</style>
+{%endblock%}
+
+
